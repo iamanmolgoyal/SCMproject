@@ -142,10 +142,12 @@ int main() {
                         break;
                         
                     case 2:
-                        printf("Bench Dips\nDumbbell Triceps Extension\nPush Ups\nReverse grip bench press\nReverse grip triceps pushdown\nSkull Crushers\nTricep Rope Pushdown\n");
+                        printf("1.Bench Dips\n2.Dumbbell Triceps Extension\n3.Push Ups\n4.Reverse grip bench press\n5.Reverse grip triceps pushdown\n6.Skull Crushers\n7.Tricep Rope Pushdown\n");
                         break;
                         
                     case 3:
+                        printf("1.Narrow Grip Chest Press\n2.Incline Bench Press\n3.Cable Chest Flys\n4.Triceps Dips\n5.Wide Grip Chest Press\n6.Scapular Pushups\n7.Cable Crossover\n");
+                               
                         break;
                         
                     case 4:
