@@ -142,7 +142,7 @@ int main() {
                         break;
                         
                     case 2:
-                        
+                        printf("Bench Dips\nDumbbell Triceps Extension\nPush Ups\nReverse grip bench press\nReverse grip triceps pushdown\nSkull Crushers\nTricep Rope Pushdown\n");
                         break;
                         
                     case 3:
