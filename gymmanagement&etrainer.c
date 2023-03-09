@@ -158,11 +158,11 @@ int main() {
                         break;
                         
                     case 6:
-                        printf("");
+                        printf("1.Squats\n2.Romanian deadlift\n3.Leg Press\n4.Walking lunges\n5.Reverse lunge\n6.Stepup\n7.Single-leg deadlift\n");
                         break;
                         
                     case 7:
-                        printf("");
+                        printf("1.Ab Wheel Rollout\n2.Horizontal Cable Woodchop\n3.Barbell Rollout\n4.Getups\n5.Leg Raise\n6.Pullup to Knee Raise\n7.Planks\n");
                         break;
                         
                     default :
