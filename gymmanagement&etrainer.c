@@ -147,19 +147,22 @@ int main() {
                         
                     case 3:
                         printf("1.Narrow Grip Chest Press\n2.Incline Bench Press\n3.Cable Chest Flys\n4.Triceps Dips\n5.Wide Grip Chest Press\n6.Scapular Pushups\n7.Cable Crossover\n");
-                               
                         break;
                         
                     case 4:
+                        printf("1.Barbell Overhead Press\n2.Half-Kneeling Landmine Press\n3.Arnold Press\n4.Bottoms-Up Kettlebell Press\n5.Wide-Grip Seated Row\n6.Leaning Lateral Raise\n7.Push Press\n");
                         break;
                         
                     case 5:
+                        printf("1.Deadlift\n2.Bent-Over Row\n3.Pull-Up\n4.T-Bar Row\n5.Seated Row\n6.Single-Arm Smith Machine Row\n7.Lat Pull-Down\n8.Single-Arm Dumbbell Row\n");
                         break;
                         
                     case 6:
+                        printf("");
                         break;
                         
                     case 7:
+                        printf("");
                         break;
                         
                     default :
