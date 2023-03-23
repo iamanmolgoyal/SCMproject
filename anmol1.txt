@@ -1,3 +1,66 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_MEMBERS 100 // maximum number of members that can be registered
+
+
+struct Member {
+    char name[50];
+    int age;
+    char gender;
+    char membership_type[20];
+    float weight;
+    float height;
+    float bmi;
+};
+
+struct Gym {
+    int num_members;
+    struct Member members[MAX_MEMBERS];
+};
+
+void print_member(struct Member member) {
+    printf("Name: %s\n", member.name);
+    printf("Age: %d\n", member.age);
+    printf("Gender: %c\n", member.gender);
+    printf("Membership Type: %s\n", member.membership_type);
+    printf("Weight: %.2f kg\n", member.weight);
+    printf("Height: %.2f cm\n", member.height);
+    printf("BMI: %.2f\n", member.bmi);
+    printf("\n");
+}
+
+void print_all_members(struct Gym gym) {
+    printf("Total Members: %d\n", gym.num_members);
+    printf("--------------------\n");
+    for (int i = 0; i < gym.num_members; i++) {
+        printf("Member %d:\n", i+1);
+        print_member(gym.members[i]);
+    }
+}
+
+void add_member(struct Gym *gym) {
+    if (gym->num_members >= MAX_MEMBERS) {
+        printf("Cannot add more members.\n");
+        return;
+    }
+    struct Member new_member;
+    printf("Enter member details:\n");
+    printf("Name: ");
+    scanf("%s", new_member.name);
+    printf("Age: ");
+    scanf("%d", &new_member.age);
+    printf("Gender (M/F): ");
+    scanf(" %c", &new_member.gender);
+    printf("Membership Type (Regular/Premium): ");
+    scanf("%s", new_member.membership_type);
+    printf("Weight (in kg): ");
+    scanf("%f", &new_member.weight);
+    printf("Height (in cm): ");
+    scanf("%f", &new_member.height);
+    new_member.bmi = new_member.weight / ((new_member.height/100)*(new_member.height/100));
+    gym->members[gym->num_members] = new_member;
+    gym->num_members++;
+    printf("Member added successfully.\n");
+}
